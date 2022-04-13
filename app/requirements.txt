@@ -1,0 +1,8 @@
+Flask
+tensorflow-cpu
+Pillow
+gunicorn
+six
+typing-extensions
+jinja2
+numpy

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Alphabets and Number Recognizer</title>
+    <link rel="stylesheet" href="../static/style.css">
+    <title>Canvas</title>
+</head>
+
+<body>
+	<div class="alert alert-success">
+		<center><strong>Welcome</strong></center>
+		<center><p>This is a alphabet and number recognizing AI tool. It is built with Tensorflow Keras using Convolutional Neural Network (CNN). Draw a capital letter or a number at the left box below and the tool will respond with a prediction and associated confidence.</p></center>
+		</div>
+
+    <div class="main">
+		        <div class="draw">
+            <canvas></canvas>
+            <button>Reset</button>
+        </div>
+        <div class="output">
+            <span class="label"></span>
+            <span class="confidence"></span>
+        </div>
+    </div>
+
+    <script src="../static/script.js"></script>
+</body>
+
+</html>
