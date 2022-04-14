@@ -23,7 +23,7 @@ let cur = { x: 0, y: 0 };
 // the previous position of the mouse cursor
 let prev = { x: 0, y: 0 };
 
-// this turns on / off drawing on canvas 
+// this turns on / off drawing on canvas
 let paint;
 
 // fill the canvas with white
@@ -49,6 +49,8 @@ update = (x, y) => {
 
 // draw stroke lines on the canvas
 draw = (event) => {
+	clientX = e.touches[0].clientX;
+	clientY = e.touches[0].clientY;
     let rect = event.target.getBoundingClientRect();
     let x = event.clientX - rect.left;
     let y = event.clientY - rect.top;
@@ -87,4 +89,3 @@ button.addEventListener("click", reset);
 canvas.addEventListener("mousemove", draw);
 canvas.addEventListener("mousedown", () => { paint = true; });
 canvas.addEventListener("mouseup", predict);
-
