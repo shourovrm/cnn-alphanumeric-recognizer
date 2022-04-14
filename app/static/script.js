@@ -49,8 +49,6 @@ update = (x, y) => {
 
 // draw stroke lines on the canvas
 draw = (event) => {
-	clientX = e.touches[0].clientX;
-	clientY = e.touches[0].clientY;
     let rect = event.target.getBoundingClientRect();
     let x = event.clientX - rect.left;
     let y = event.clientY - rect.top;
